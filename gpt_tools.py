@@ -2,7 +2,7 @@ import os
 from openai import OpenAI
 
 # Initialize the OpenAI client using your API key
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 def get_gpt4_summary(referral_data):
     """
